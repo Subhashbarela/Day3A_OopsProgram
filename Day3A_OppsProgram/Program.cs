@@ -10,7 +10,8 @@ namespace Day3A_OppsProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1: class and object \n2: Inheritance \n3: Method Overloading \n4: MethodOverriding \n5: Encapsulation \n6: Abstraction \n7: Types Of Variable");
+            Console.WriteLine("1: class and object \n2: Inheritance \n3: Method Overloading \n4: MethodOverriding \n5: Encapsulation \n6: Abstraction " +
+                "\n7: Types Of Variable\n8: Types Of method");
             Console.WriteLine("Enter your choice..!");
             int choice=int.Parse(Console.ReadLine());
             switch (choice)
@@ -122,6 +123,14 @@ namespace Day3A_OppsProgram
                         vr.IsMarride = false;
                         vr.Heigth = 6.64;
                         vr.Display();
+                        break;
+                    }
+                case 8:
+                    {
+                        TypesOfMethod Obj = new TypesOfMethod();
+                        Obj.NonParameterizeMethod();
+                        Obj.ParameterizeMethod("subhash");
+                        TypesOfMethod.StaticMethod(); // Access the Static Method So no need to create object of this class
                         break;
                     }
                 default:
