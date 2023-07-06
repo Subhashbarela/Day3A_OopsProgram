@@ -10,7 +10,7 @@ namespace Day3A_OppsProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1: class and object \n2: Inheritance \n3: Method Overloading");
+            Console.WriteLine("1: class and object \n2: Inheritance \n3: Method Overloading \n4: MethodOverriding");
             Console.WriteLine("Enter your choice..!");
             int choice=int.Parse(Console.ReadLine());
             switch (choice)
@@ -74,6 +74,13 @@ namespace Day3A_OppsProgram
                         overloading.Add(10,20);
                         overloading.Add(2.4,7.5);
                         overloading.Add("Subhash","Barela");
+
+                        break;
+                    }
+                case 4:
+                    {
+                        MChildClassTwo overriding = new MChildClassTwo();
+                        overriding.Print();            
 
                         break;
                     }
