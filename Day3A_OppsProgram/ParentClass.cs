@@ -15,17 +15,25 @@ namespace Day3A_OppsProgram
     }
     public class FirstChild: ParentClass
     {
-        public void ChildClassMethod()
+        public void FirstChildClassMethod()
         {
             Console.WriteLine("This is child class method ");
         }
     }
     public class SecondChild : FirstChild
     {
-        public void ChildClassBMethod()
+        public void SecondChildClassMethod()
         {
             Console.WriteLine("This is Second child class method ");
         }
+    }
+    public class HierarchicalClass: ParentClass
+    {
+        public void Hierarchical_Class_Method()
+        {
+            Console.WriteLine("This is Hierachical class method ");
+        }
+
     }
 
 }

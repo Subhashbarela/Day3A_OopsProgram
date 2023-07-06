@@ -24,7 +24,7 @@ namespace Day3A_OppsProgram
                     }
                 case 2:
                     {
-                        Console.WriteLine("1: Single Inheritance \n2: Mutlilevel Inheritance");
+                        Console.WriteLine("1: Single Inheritance \n2: Mutlilevel Inheritance \n3: Hierarchical Inheritance");
                         Console.WriteLine("Enter the choice");
                         int opt=int.Parse(Console.ReadLine());
                         switch(opt)
@@ -34,7 +34,7 @@ namespace Day3A_OppsProgram
 
                                     FirstChild child = new FirstChild();
                                     child.ParentClassMethod();
-                                    child.FirstChildMethod();
+                                    child.FirstChildClassMethod();
                                     break;
                                 }   
                             case 2:
@@ -42,8 +42,20 @@ namespace Day3A_OppsProgram
 
                                     SecondChild child = new SecondChild();
                                     child.ParentClassMethod();
-                                    child.FirstChildMethod();
-                                    child.SecondChileMethod();
+                                    child.FirstChildClassMethod();
+                                    child.SecondChildClassMethod();
+                                    break;
+                                } 
+                            case 3:
+                                {
+                                    FirstChild child = new FirstChild();
+                                    child.ParentClassMethod();
+                                    child.FirstChildClassMethod();
+
+                                    HierarchicalClass hierarchical = new HierarchicalClass();
+                                    hierarchical.ParentClassMethod();
+                                    hierarchical.Hierarchical_Class_Method();                                  
+
                                     break;
                                 }
                             default:
