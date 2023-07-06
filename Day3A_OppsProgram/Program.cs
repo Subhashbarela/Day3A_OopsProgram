@@ -10,7 +10,7 @@ namespace Day3A_OppsProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1: class and object \n2: Inheritance \n3: Method Overloading \n4: MethodOverriding \n5: Encapsulation \n6: Abstraction");
+            Console.WriteLine("1: class and object \n2: Inheritance \n3: Method Overloading \n4: MethodOverriding \n5: Encapsulation \n6: Abstraction \n7: Types Of Variable");
             Console.WriteLine("Enter your choice..!");
             int choice=int.Parse(Console.ReadLine());
             switch (choice)
@@ -104,6 +104,24 @@ namespace Day3A_OppsProgram
 
                         Pig pig = new Pig();
                         pig.makeSound();
+                        break;
+                    }
+                case 7:
+                    {
+                        // TypesOfVariableClass rtype= new TypesOfVariableClass();
+                        //rtype.MethodType(1);
+                        //int val=Obj.IntMethodType(4,5);
+                        //Console.WriteLine(val);
+                        //Console.WriteLine(rtype.DoubleMethodType(4.5,6.7));
+                        //Console.WriteLine(rtype.StringMethodType());
+                        //Console.WriteLine(rtype.BoolMethodType(10));
+
+                        VariableTypes vr = new VariableTypes();
+                        vr.id = 102;
+                        vr.name = "Subhash";
+                        vr.IsMarride = false;
+                        vr.Heigth = 6.64;
+                        vr.Display();
                         break;
                     }
                 default:
