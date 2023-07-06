@@ -10,7 +10,7 @@ namespace Day3A_OppsProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1: class and object \n2: Inheritance \n3: Method Overloading \n4: MethodOverriding");
+            Console.WriteLine("1: class and object \n2: Inheritance \n3: Method Overloading \n4: MethodOverriding \n5: Encapsulation");
             Console.WriteLine("Enter your choice..!");
             int choice=int.Parse(Console.ReadLine());
             switch (choice)
@@ -82,6 +82,19 @@ namespace Day3A_OppsProgram
                         MChildClassTwo overriding = new MChildClassTwo();
                         overriding.Print();            
 
+                        break;
+                    } 
+                case 5:
+                    {
+                        EncapsulationClass encapsulation = new EncapsulationClass();
+                        encapsulation.ID=102;            
+                        encapsulation.Name="Subash barela";
+                        Console.WriteLine("Id is : "+encapsulation.ID);
+                        Console.WriteLine("Id is : "+encapsulation.Name);
+                        //................................................
+                        EncapsulationUsingFunction usingFunction = new EncapsulationUsingFunction();
+                        usingFunction.SetData(200, "Bridgelabs Solution");
+                        usingFunction.GetData();
                         break;
                     }
                 default:
