@@ -43,7 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animal.cs" />
+    <Compile Include="EncapsulationClass.cs" />
     <Compile Include="MainClass.cs" />
+    <Compile Include="MethodOverloading.cs" />
+    <Compile Include="MParentClass.cs" />
     <Compile Include="ParentClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

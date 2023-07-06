@@ -10,7 +10,7 @@ namespace Day3A_OppsProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1: class and object \n2: Inheritance \n3: Method Overloading \n4: MethodOverriding \n5: Encapsulation");
+            Console.WriteLine("1: class and object \n2: Inheritance \n3: Method Overloading \n4: MethodOverriding \n5: Encapsulation \n6: Abstraction");
             Console.WriteLine("Enter your choice..!");
             int choice=int.Parse(Console.ReadLine());
             switch (choice)
@@ -95,6 +95,15 @@ namespace Day3A_OppsProgram
                         EncapsulationUsingFunction usingFunction = new EncapsulationUsingFunction();
                         usingFunction.SetData(200, "Bridgelabs Solution");
                         usingFunction.GetData();
+                        break;
+                    }
+                case 6:
+                    {
+                        Dog bruzo = new Dog();
+                        bruzo.makeSound();
+
+                        Pig pig = new Pig();
+                        pig.makeSound();
                         break;
                     }
                 default:
