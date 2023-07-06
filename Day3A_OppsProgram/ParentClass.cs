@@ -6,7 +6,26 @@ using System.Threading.Tasks;
 
 namespace Day3A_OppsProgram
 {
-    internal class ParentClass
+    public class ParentClass
     {
+        public void ParentClassMethod()
+        {
+            Console.WriteLine("this is parent class method");
+        }
     }
+    public class FirstChild: ParentClass
+    {
+        public void ChildClassMethod()
+        {
+            Console.WriteLine("This is child class method ");
+        }
+    }
+    public class SecondChild : FirstChild
+    {
+        public void ChildClassBMethod()
+        {
+            Console.WriteLine("This is Second child class method ");
+        }
+    }
+
 }
