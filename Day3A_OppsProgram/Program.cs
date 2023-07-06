@@ -10,7 +10,9 @@ namespace Day3A_OppsProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("hello world");
+            MainClass mainClass = new MainClass();
+            mainClass.SetData(101,"Subhash");
+            mainClass.GetData();
         }
     }
 }
